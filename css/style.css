@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+/* HEADER */
+header{
+    text-align: right;
+    background-color: black;
+}
+
+header div{
+    display: inline-block;
+}
+
+header .views{
+    display: inline-block;
+    background-color: #5E6A72 !important;
+    margin: 5px ;
+    border-radius: 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+} 
+
+/* FOOTER */
+footer{
+    position: fixed;
+    height: 150px;
+    bottom: 0;
+    width: 100%;
+}
