@@ -6,12 +6,17 @@
 
 body{
     font-family: 'Lato', sans-serif;
+    background-color: black;
+}
+
+.white_col{
+    color: white;
 }
 
 /* HEADER */
 header{
     text-align: right;
-    background-color: black;
+    height: 80px;
 }
 
 header div{
@@ -28,10 +33,87 @@ header .views{
     color: white;
 } 
 
+/* MAIN */
+main{
+    height: calc(100vh - 185px);
+}
+
+.container{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+.person{
+    height: 150px;
+    width: 250px;
+    background-image: url(../img/image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    position: relative;
+}
+
+.person span{
+    position: absolute;
+    background-color:rgba(74,74,74,0.7);
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+}
+
 /* FOOTER */
 footer{
-    position: fixed;
-    height: 150px;
+    height: 100px;
     bottom: 0;
     width: 100%;
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.left_commands{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+
+.center_commands{
+    display: flex;
+    align-items: center;
+}
+
+.single_command{
+    display: inline-block;
+    text-align: center;
+    margin: 5px;
+}
+
+.single_command div{
+    font-size: 15px;
+    color: white;
+}
+
+.right_commands{
+    display: flex;
+    background-color: #4A4A4A;
+    height: 100%;
+    align-items: center;
+}
+
+.right_commands a{
+    text-decoration: none;
+    color: red;
 }
